@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'MyCustomFont'; /* Избери уникално име за твоя шрифт */
+    src: url('./VehicleBreaksDown-Regular.ttf') format('truetype'); /* Път до файла и формат */
+}
+body {
+font-family: 'MyCustomFont', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  width: 100vw; 
+  height: 100vh; 
+  background-image: url('../images/bg.webp');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-attachment: fixed; 
+-webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 3em;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-car {
+  width: 120px;
+}
+
+nav a {
+  font-size: 14px;
+  text-shadow: 1px 1px black;
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  transition: transform 0.7s ease-in-out;
+  background-color: #658696;
+  padding: 5px;
+  border-radius: 10px;
+  width: 9vw;
+  box-shadow: rgba(0, 0, 0, 0.658) 0px -50px 36px -28px inset;
+}
+
+
+nav a:hover {
+  scale: 1.2;
+}
+
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 70vh;
+}
+#hero h1 {
+  font-size: 40px;
+  text-shadow: 1px 1px black;
+  font-weight: 100;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+  width: 70vw;
+  border-radius: 11px;
+  
+}
