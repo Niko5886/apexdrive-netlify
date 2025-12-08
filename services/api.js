@@ -1,4 +1,5 @@
-const host = 'http://localhost:3030';
+const defaultHost = 'http://localhost:3030';
+const host = (typeof window !== 'undefined' && window.API_HOST) ? window.API_HOST : defaultHost;
 const jsonHeaders = { 'Content-Type': 'application/json' };
 let authToken = sessionStorage.getItem('authToken') || '';
 

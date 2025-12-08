@@ -34,6 +34,10 @@
 
       <main id="main-element"></main>
     </div>
+    <script>
+      // Override the API host in production; points to deployed backend
+      window.API_HOST = window.API_HOST || 'https://apexdrivee.netlify.app';
+    </script>
     <script type="module" src="app.js"></script>
   </body>
 </html>

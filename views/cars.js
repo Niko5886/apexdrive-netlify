@@ -2,6 +2,31 @@ import { el } from '../utils/dom.js';
 import { carService } from '../services/api.js';
 import { navigate } from '../utils/router.js';
 
+// Demo data shown when the API is unreachable (e.g., deployed without a backend)
+const demoCars = [
+  {
+    model: 'Porsche 911 GT3',
+    price: 172000,
+    weight: 1435,
+    speed: 318,
+    imageUrl: './images/car-logo.png'
+  },
+  {
+    model: 'BMW M4 Competition',
+    price: 79900,
+    weight: 1730,
+    speed: 280,
+    imageUrl: './images/car-logo.png'
+  },
+  {
+    model: 'Audi RS6 Avant',
+    price: 129000,
+    weight: 2050,
+    speed: 305,
+    imageUrl: './images/car-logo.png'
+  }
+];
+
 export function carsView() {
   const wrapper = el('div');
   const heading = el('h3', { className: 'heading', text: 'Our Cars' });
@@ -21,7 +46,8 @@ async function loadCars(list) {
     const cars = await carService.all();
     renderList(list, cars);
   } catch (err) {
-    list.textContent = 'Failed to load catalog.';
+    renderList(list, demoCars);
+    list.appendChild(el('p', { className: 'notice', text: 'Showing demo cars because the API is unreachable.' }));
   }
 }
 
