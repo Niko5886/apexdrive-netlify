@@ -25,10 +25,6 @@ Experience the application in action. Browse our car catalog, search for vehicle
 - **API:** REST API integration
 - **Deployment:** Netlify (static hosting)
 
-## ✅ Judge System Results
-
-✅ **115/115 points** - All tests passed!
-
 ## Project Structure
 
 ```
