@@ -17,7 +17,7 @@ const nav = document.querySelector('nav');
 
 setupRouter(outlet);
 
-// Маршрути: публични, защитени и auth
+//   Маршрути: публични, защитени и auth
 registerRoute('/', homeView);
 registerRoute('/cars', carsView);
 registerRoute('/details', detailsView); // очаква ID през hash/query при нужда
