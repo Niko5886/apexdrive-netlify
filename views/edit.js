@@ -40,7 +40,7 @@ export async function editView(params) {
   formDiv.appendChild(form);
   section.appendChild(formDiv);
   
-  // Load data AFTER form is created
+  //  Load data AFTER form is created
   await loadCar(id, form);
   
   return section;
