@@ -81,7 +81,7 @@ async function handleDelete(id) {
     await carService.remove(id);
     navigate('/cars');
   } catch (err) {
-    // alert е показан от api слоя
+    //  alert е показан от api слоя
   }
 }
 
